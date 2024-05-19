@@ -1,0 +1,111 @@
+.newsletter {
+    width: 95%;
+    height: auto; /* Changed height to auto to adapt to content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    padding: 40px; /* Adjusted padding */
+    margin-bottom: 100px; /* Adjusted margin-bottom */
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    gap: 20px; /* Adjusted gap between elements */
+}
+
+.newsletter h1 {
+    margin-top: 0; /* Removed margin-top */
+    color: #454545;
+    font-size: 40px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+}
+
+.newsletter p {
+    color: #454545;
+    font-size: 18px; /* Adjusted font size for smaller screens */
+}
+
+.newsletter div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    max-width: 95%; /* Changed width to adapt to screen size */
+    width: 730px; /* Added max-width to avoid overflowing on smaller screens */
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+
+.newsletter input {
+    width: 70%; /* Adjusted width to be relative to parent */
+    max-width: 500px; /* Added max-width to prevent overflowing on smaller screens */
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: "Poppins";
+    font-size: 16px; /* Adjusted font size for smaller screens */
+}
+
+.newsletter div button {
+    width: 30%; /* Adjusted width to be relative to parent */
+    max-width: 210px; /* Added max-width to prevent overflowing on smaller screens */
+    height: 70px;
+    border-radius: 80px;
+    background: black;
+    color: white;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    cursor: pointer;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 768px) {
+    .newsletter {
+        padding: 20px; /* Further adjusted padding for smaller screens */
+        margin-bottom: 50px; /* Further adjusted margin-bottom for smaller screens */
+    }
+
+    .newsletter h1 {
+        font-size: 32px; /* Further adjusted font size for smaller screens */
+    }
+
+    .newsletter p {
+        font-size: 16px; /* Further adjusted font size for smaller screens */
+    }
+
+    .newsletter div {
+        width: 90%; /* Further adjusted width for smaller screens */
+        max-width: 500px; /* Further adjusted max-width for smaller screens */
+    }
+
+    .newsletter input {
+        max-width: 70%; /* Further adjusted max-width for smaller screens */
+    }
+
+    .newsletter div button {
+        max-width: 30%; /* Further adjusted max-width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .newsletter h1 {
+        font-size: 28px; /* Further adjusted font size for even smaller screens */
+    }
+
+    .newsletter p {
+        font-size: 14px; /* Further adjusted font size for even smaller screens */
+    }
+
+    .newsletter div {
+        width: 90%; /* Further adjusted width for even smaller screens */
+        max-width: 400px; /* Further adjusted max-width for even smaller screens */
+    }
+
+    .newsletter input {
+        max-width: 65%; /* Further adjusted max-width for even smaller screens */
+    }
+
+    .newsletter div button {
+        max-width: 25%; /* Further adjusted max-width for even smaller screens */
+    }
+}

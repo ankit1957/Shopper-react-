@@ -1,0 +1,57 @@
+.offers {
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    width: 95%;
+    height: auto; /* Changed height to auto to adapt to content */
+    display: flex;
+    margin: auto;
+    padding: 40px 10%; /* Adjusted padding for responsiveness */
+    margin-bottom: 100px; /* Adjusted margin-bottom */
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: #171717;
+    font-size: 40px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: #171717;
+    font-size: 18px; /* Adjusted font size for smaller screens */
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 40%; /* Adjusted width to be relative to parent */
+    max-width: 200px; /* Added max-width to prevent overflowing on smaller screens */
+    height: 9vh;
+    border-radius: 35px;
+    background: #ff4141;
+    border: none;
+    color: white;
+    font-size: 18px; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 20px; /* Adjusted padding-top for responsiveness */
+}
+
+.offers-right img {
+    max-width: 100%; /* Ensured image fits within its container */
+    height: auto; /* Ensured image maintains aspect ratio */
+}
